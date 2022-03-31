@@ -7,10 +7,15 @@ final int GAMEOVER = 3;
 //game object
 float x, y, d;
 float vx, vy;
+int score, lives;
 
 void setup() {
   size(800, 800);
-  mode = INTRO;
+  mode = GAME;
+  
+  score = 0;
+  lives = 3;
+  
   x = width/2;
   y = height/2;
   d = 100;
